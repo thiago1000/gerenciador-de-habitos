@@ -14,24 +14,24 @@ const NewHabit = () => {
   }
 
   return (
-    <main className="container relative flex flex-col gap-8 px-12 pt-16">
+    <main className="container relative flex flex-col gap-8 px-12 pt-16 md:max-w-3xl">
       <h1 className="text-4xl font-light text-white font-display text-center">
         Novo hábito
       </h1>
-      <form action={newHabit} className="flex flex-col gap-4 mt-4">
+      <form action={newHabit} className="flex flex-col gap-4 mt-4 ">
         <input
           type="text"
           name="habit"
           id="habit"
-          className="p-2 font-sans text-white rounded-md bg-neutral-800"
+          className="p-2 font-sans text-white rounded-md bg-neutral-800 button-md-style"
         />
         <button
           type="submit"
-          className="bg-[#45EDAD] font-display text-neutral-900 font-regular rounded-md text-2xl p-2 mt-8"
+          className="bg-[#45EDAD] font-display text-neutral-900 font-regular rounded-md text-2xl p-2 mt-8 button-md-style"
         >
           Cadastrar
         </button>
-        <button className="bg-neutral-800 text-[#F85858] font-display font-regular rounded-md text-2xl p-2">
+        <button className="bg-neutral-800 text-[#F85858] font-display font-regular rounded-md text-2xl p-2 button-md-style">
           Cancelar
         </button>
       </form>

@@ -29,7 +29,7 @@ export default async function Home() {
     .reverse();
 
   return (
-    <main className="container relative flex flex-col gap-8 px-4 pt-16">
+    <main className="container relative flex flex-col gap-8 px-4 pt-16 md:max-w-3xl">
       {habits === null ||
         (Object.keys(habits).length === 0 && (
           <h1 className="mt-20 text-4xl font-light text-white font-display text-center">
@@ -62,9 +62,9 @@ export default async function Home() {
 
       <Link
         href={'/new-habit'}
-        className="fixed text-center bottom-10 w-2/3 left-1/2 -translate-x-1/2 text-neutral-900 bg-[#45EDAD] font-display font-regular text-2xl p-2 rounded-md"
+        className="fixed text-center bottom-10 w-2/3 left-1/2 -translate-x-1/2 text-neutral-900 bg-[#45EDAD] font-display font-regular text-2xl p-2 rounded-md md:max-w-md"
       >
-        novo hábito
+        Novo hábito
       </Link>
     </main>
   );
